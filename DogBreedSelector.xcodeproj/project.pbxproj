@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD09A48C2A29188B00B0CF2D /* DogBreedSelectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09A48B2A29188B00B0CF2D /* DogBreedSelectorApp.swift */; };
-		CD09A48E2A29188B00B0CF2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09A48D2A29188B00B0CF2D /* ContentView.swift */; };
+		CD09A48E2A29188B00B0CF2D /* DogBreedSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09A48D2A29188B00B0CF2D /* DogBreedSelectorView.swift */; };
 		CD09A4902A29188D00B0CF2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD09A48F2A29188D00B0CF2D /* Assets.xcassets */; };
 		CD09A4932A29188D00B0CF2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		CD09A4882A29188B00B0CF2D /* DogBreedSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogBreedSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD09A48B2A29188B00B0CF2D /* DogBreedSelectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedSelectorApp.swift; sourceTree = "<group>"; };
-		CD09A48D2A29188B00B0CF2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD09A48D2A29188B00B0CF2D /* DogBreedSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedSelectorView.swift; sourceTree = "<group>"; };
 		CD09A48F2A29188D00B0CF2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,7 +35,11 @@
 		CD09A47F2A29188B00B0CF2D = {
 			isa = PBXGroup;
 			children = (
+				CD09A48F2A29188D00B0CF2D /* Assets.xcassets */,
+				CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */,
 				CD09A48A2A29188B00B0CF2D /* DogBreedSelector */,
+				CD09A4992A2E1CF600B0CF2D /* Model */,
+				CD09A4912A29188D00B0CF2D /* Preview Content */,
 				CD09A4892A29188B00B0CF2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,9 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				CD09A48B2A29188B00B0CF2D /* DogBreedSelectorApp.swift */,
-				CD09A48D2A29188B00B0CF2D /* ContentView.swift */,
-				CD09A48F2A29188D00B0CF2D /* Assets.xcassets */,
-				CD09A4912A29188D00B0CF2D /* Preview Content */,
+				CD09A48D2A29188B00B0CF2D /* DogBreedSelectorView.swift */,
 			);
 			path = DogBreedSelector;
 			sourceTree = "<group>";
@@ -62,9 +64,15 @@
 		CD09A4912A29188D00B0CF2D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD09A4992A2E1CF600B0CF2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD09A48E2A29188B00B0CF2D /* ContentView.swift in Sources */,
+				CD09A48E2A29188B00B0CF2D /* DogBreedSelectorView.swift in Sources */,
 				CD09A48C2A29188B00B0CF2D /* DogBreedSelectorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
