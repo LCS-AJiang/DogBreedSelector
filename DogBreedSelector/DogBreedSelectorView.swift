@@ -9,8 +9,18 @@ import SwiftUI
 
 struct DogBreedSelectorView: View {
     
+    // MARK: Stored properties
+    // The list of items to show
+    @State var BubbleText = ["Text1", "Text2", "Text3", "Text4"]
+    
+    // MARK: properties
     var body: some View {
         VStack {
+            
+            List(BubbleText, id: \.self) { currentItem in Text(currentItem)
+                
+            }
+            
             HStack (spacing: 5){
                 Image(systemName: "house.fill")
                     .resizable()

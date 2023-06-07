@@ -63,10 +63,10 @@
 			children = (
 				CD09A48B2A29188B00B0CF2D /* DogBreedSelectorApp.swift */,
 				CD09A48D2A29188B00B0CF2D /* DogBreedSelectorView.swift */,
-				CD600DEC2A300F7800C32FD2 /* pictureText.swift */,
-				CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */,
+				CDB6A36D2A30F70F00F240D3 /* PictureTextView */,
 				CD600DE62A2F8C0200C32FD2 /* populate_database.sql */,
 				CD600DE82A2F968400C32FD2 /* db.sqlite */,
+				CDB6A36C2A30F6C100F240D3 /* Bubbletext */,
 			);
 			path = DogBreedSelector;
 			sourceTree = "<group>";
@@ -85,6 +85,22 @@
 				CD09A48F2A29188D00B0CF2D /* Assets.xcassets */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CDB6A36C2A30F6C100F240D3 /* Bubbletext */ = {
+			isa = PBXGroup;
+			children = (
+				CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */,
+			);
+			path = Bubbletext;
+			sourceTree = "<group>";
+		};
+		CDB6A36D2A30F70F00F240D3 /* PictureTextView */ = {
+			isa = PBXGroup;
+			children = (
+				CD600DEC2A300F7800C32FD2 /* pictureText.swift */,
+			);
+			path = PictureTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

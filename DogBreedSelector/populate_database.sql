@@ -61,8 +61,127 @@ INSERT INTO Breed
 VALUES
 (
     "Bull Dog",
-    "friendly, does not bark often, active",
+    "friendly, courageous, calm, barkless",
     "Bulldog",
-    "large"
+    "medium"
 );
 
+
+
+INSERT INTO Breed
+(
+    name,
+    characteristics,
+    picture,
+    size
+)
+VALUES
+(
+    "American Eskimo Dog",
+    "loyal, smart, versatile",
+    "AmericanEskimoDog",
+    "medium"
+);
+
+
+
+INSERT INTO Breed
+(
+    name,
+    characteristics,
+    picture,
+    size
+)
+VALUES
+(
+    "Cavalier King Charles Spaniel",
+    "affectionate, gentle, graceful, friendly",
+    "CavalierKingCharlesSpaniel",
+    "small"
+);
+
+
+
+
+INSERT INTO Breed
+(
+    name,
+    characteristics,
+    picture,
+    size
+)
+VALUES
+(
+    "French Bulldog",
+    "playful, smart, adaptable, friendly",
+    "French Bulldog",
+    "small"
+);
+
+
+
+INSERT INTO Breed
+(
+    name,
+    characteristics,
+    picture,
+    size
+)
+VALUES
+(
+    "German Shepherd",
+    "courageous, smart, confident, friendly",
+    "GermanShepherd",
+    "medium"
+);
+
+
+
+INSERT INTO Breed
+(
+    name,
+    characteristics,
+    picture,
+    size
+)
+VALUES
+(
+    "Golden Retriever",
+    "devoted, intelligent, affectionate, friendly",
+    "GoldenRetriever",
+    "medium"
+);
+
+
+
+INSERT INTO Breed
+(
+    name,
+    characteristics,
+    picture,
+    size
+)
+VALUES
+(
+    "Pembroke Welsh Corgi",
+    "alert, smart, affectionate, vigilant",
+    "PembrokWelshCorgi",
+    "medium"
+);
+
+
+
+INSERT INTO Breed
+(
+    name,
+    characteristics,
+    picture,
+    size
+)
+VALUES
+(
+    "Siberian Huskey",
+    "outgoing, mischievous, loyal, affectionate",
+    "SiberianHuskey",
+    "medium"
+);
