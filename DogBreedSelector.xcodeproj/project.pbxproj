@@ -11,6 +11,10 @@
 		CD09A48E2A29188B00B0CF2D /* DogBreedSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09A48D2A29188B00B0CF2D /* DogBreedSelectorView.swift */; };
 		CD09A4902A29188D00B0CF2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD09A48F2A29188D00B0CF2D /* Assets.xcassets */; };
 		CD09A4932A29188D00B0CF2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */; };
+		CD600DE72A2F8C0200C32FD2 /* populate_database.sql in Resources */ = {isa = PBXBuildFile; fileRef = CD600DE62A2F8C0200C32FD2 /* populate_database.sql */; };
+		CD600DE92A2F968400C32FD2 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CD600DE82A2F968400C32FD2 /* db.sqlite */; };
+		CD600DEB2A300C1100C32FD2 /* BubbleSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */; };
+		CD600DED2A300F7800C32FD2 /* pictureText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD600DEC2A300F7800C32FD2 /* pictureText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		CD09A48D2A29188B00B0CF2D /* DogBreedSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedSelectorView.swift; sourceTree = "<group>"; };
 		CD09A48F2A29188D00B0CF2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD600DE62A2F8C0200C32FD2 /* populate_database.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = populate_database.sql; sourceTree = "<group>"; };
+		CD600DE82A2F968400C32FD2 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = Model/db.sqlite; sourceTree = SOURCE_ROOT; };
+		CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSelector.swift; sourceTree = "<group>"; };
+		CD600DEC2A300F7800C32FD2 /* pictureText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +43,6 @@
 		CD09A47F2A29188B00B0CF2D = {
 			isa = PBXGroup;
 			children = (
-				CD09A48F2A29188D00B0CF2D /* Assets.xcassets */,
-				CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */,
 				CD09A48A2A29188B00B0CF2D /* DogBreedSelector */,
 				CD09A4992A2E1CF600B0CF2D /* Model */,
 				CD09A4912A29188D00B0CF2D /* Preview Content */,
@@ -57,6 +63,10 @@
 			children = (
 				CD09A48B2A29188B00B0CF2D /* DogBreedSelectorApp.swift */,
 				CD09A48D2A29188B00B0CF2D /* DogBreedSelectorView.swift */,
+				CD600DEC2A300F7800C32FD2 /* pictureText.swift */,
+				CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */,
+				CD600DE62A2F8C0200C32FD2 /* populate_database.sql */,
+				CD600DE82A2F968400C32FD2 /* db.sqlite */,
 			);
 			path = DogBreedSelector;
 			sourceTree = "<group>";
@@ -64,6 +74,7 @@
 		CD09A4912A29188D00B0CF2D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				CD09A4922A29188D00B0CF2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -71,6 +82,7 @@
 		CD09A4992A2E1CF600B0CF2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD09A48F2A29188D00B0CF2D /* Assets.xcassets */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +147,8 @@
 			files = (
 				CD09A4932A29188D00B0CF2D /* Preview Assets.xcassets in Resources */,
 				CD09A4902A29188D00B0CF2D /* Assets.xcassets in Resources */,
+				CD600DE72A2F8C0200C32FD2 /* populate_database.sql in Resources */,
+				CD600DE92A2F968400C32FD2 /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD09A48E2A29188B00B0CF2D /* DogBreedSelectorView.swift in Sources */,
+				CD600DED2A300F7800C32FD2 /* pictureText.swift in Sources */,
+				CD600DEB2A300C1100C32FD2 /* BubbleSelector.swift in Sources */,
 				CD09A48C2A29188B00B0CF2D /* DogBreedSelectorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

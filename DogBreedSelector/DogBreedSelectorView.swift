@@ -9,9 +9,6 @@ import SwiftUI
 
 struct DogBreedSelectorView: View {
     
-    let tags = String
-    @State var searchText = ""
-    
     var body: some View {
         VStack {
             HStack {
@@ -21,38 +18,44 @@ struct DogBreedSelectorView: View {
                     .frame(width: 40, height: 40)
                 
                 Spacer()
-                
-                NavigationStack {
-                    List {
-                        ForEach(searchResult, id: \.self) { name in
-                            NavigationLink {
-                                Text (tags)
-                            } label: {
-                                Text (tags)
-                            }
-                        }
-                    }
-                    .navigationTitle("Contacts")
                 }
-                .searchable(text: $searchText)
-            }
+                
             .border(.red)
             .padding()
-
+            
+            HStack {
+                bubbleText(text: "Friendly")
+                bubbleText(text: "Sensitive")
+                bubbleText(text: "Playful")
+                bubbleText(text: "High Intelligent")
+    //            Text("Outgoing")
+    //            Text("Active")
+    //            Text("Assistance")
+    //            Text("Energetic")
+    //            Text("Loyal")
+    //            Text("Affectionate")
+                
+            }
+            .lineLimit(2)
+            
             VStack (spacing: 20){
                 Divider()
-                    .frame(height: 5)
+                    .frame(height: 3)
                     .overlay(Color.black)
                 
                 Text("HIGHLY RECOMMENDED")
                     .font(.title)
                     .bold()
                 
-                Color.black
-                    .frame(width: 400, height: 1)
+                Divider()
+                    .frame(height: 3)
+                    .overlay(Color.black)
+                
+                
             }
             .border(.green)
-            .padding()
+            .padding(.vertical)
+            .edgesIgnoringSafeArea(.horizontal)
             
             Spacer()
         }
