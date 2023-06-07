@@ -11,30 +11,48 @@ struct DogBreedSelectorView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack (spacing: 5){
                 Image(systemName: "house.fill")
                     .resizable()
                     .foregroundColor(.black)
                     .frame(width: 40, height: 40)
                 
-                Spacer()
+                
+                ZStack {
+                    Rectangle()
+                        .stroke(Color.black)
+                        .frame(height: 50)
                 }
                 
-            .border(.red)
-            .padding()
+            }
+            Divider()
+                .frame(height: 1)
+                .overlay(Color.black)
+                .edgesIgnoringSafeArea(.horizontal)
             
-            HStack {
-                bubbleText(text: "Friendly")
-                bubbleText(text: "Sensitive")
-                bubbleText(text: "Playful")
-                bubbleText(text: "High Intelligent")
-    //            Text("Outgoing")
-    //            Text("Active")
-    //            Text("Assistance")
-    //            Text("Energetic")
-    //            Text("Loyal")
-    //            Text("Affectionate")
+            //            .border(.red)
+            //.padding(.horizontal)
+            
+            VStack {
+                    HStack {
+                    bubbleText2(text: "Friendly")
+                    bubbleText2(text: "Sensitive")
+                    bubbleText2(text: "Playful")
+                    bubbleText2(text: "High Intelligent")
+                    
                 
+            }
+                HStack {
+                    bubbleText(text: "Outgoing")
+                                bubbleText(text: "Active")
+                                bubbleText(text: "Assistance")
+                                bubbleText(text: "Energetic")
+                    
+                }
+                HStack {
+                    bubbleText(text: "Loyal")
+                    bubbleText(text: "Affectionate")
+                }
             }
             .lineLimit(2)
             
@@ -50,8 +68,13 @@ struct DogBreedSelectorView: View {
                 Divider()
                     .frame(height: 3)
                     .overlay(Color.black)
-                
-                
+                HStack {
+                    pictureText(pictureOfDogs: "LabradorRetriever", characteristics: ["friendly", "outgoing", "active", "assistance"])
+                    
+                    pictureText(pictureOfDogs: "LabradorRetriever", characteristics: ["friendly", "outgoing", "active", "assistance"])
+                    
+                }
+                .font(.caption2)
             }
             .border(.green)
             .padding(.vertical)

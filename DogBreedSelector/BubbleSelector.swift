@@ -12,8 +12,19 @@ struct bubbleText: View {
     
     var body: some View {
         Text(text)
-            .font(.body)
-            .padding()
+            .padding(6)
+            .foregroundColor(.white)
+            .background(.gray)
+            .clipShape(Capsule())
+    }
+}
+
+struct bubbleText2: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .padding(10)
             .foregroundColor(.white)
             .background(.gray)
             .clipShape(Capsule())
