@@ -15,6 +15,8 @@
 		CD600DE92A2F968400C32FD2 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CD600DE82A2F968400C32FD2 /* db.sqlite */; };
 		CD600DEB2A300C1100C32FD2 /* BubbleSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */; };
 		CD600DED2A300F7800C32FD2 /* pictureText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD600DEC2A300F7800C32FD2 /* pictureText.swift */; };
+		CDC544D12A325BE1003CFEC0 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = CDC544D02A325BE1003CFEC0 /* Blackbird */; };
+		CDC544D42A325C3F003CFEC0 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC544D32A325C3F003CFEC0 /* helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		CD600DE82A2F968400C32FD2 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = Model/db.sqlite; sourceTree = SOURCE_ROOT; };
 		CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSelector.swift; sourceTree = "<group>"; };
 		CD600DEC2A300F7800C32FD2 /* pictureText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureText.swift; sourceTree = "<group>"; };
+		CDC544D32A325C3F003CFEC0 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC544D12A325BE1003CFEC0 /* Blackbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				CD09A48A2A29188B00B0CF2D /* DogBreedSelector */,
+				CDC544D22A325C0F003CFEC0 /* Helper */,
 				CD09A4992A2E1CF600B0CF2D /* Model */,
 				CD09A4912A29188D00B0CF2D /* Preview Content */,
 				CD09A4892A29188B00B0CF2D /* Products */,
@@ -103,6 +108,14 @@
 			path = PictureTextView;
 			sourceTree = "<group>";
 		};
+		CDC544D22A325C0F003CFEC0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CDC544D32A325C3F003CFEC0 /* helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +132,9 @@
 			dependencies = (
 			);
 			name = DogBreedSelector;
+			packageProductDependencies = (
+				CDC544D02A325BE1003CFEC0 /* Blackbird */,
+			);
 			productName = DogBreedSelector;
 			productReference = CD09A4882A29188B00B0CF2D /* DogBreedSelector.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +163,9 @@
 				Base,
 			);
 			mainGroup = CD09A47F2A29188B00B0CF2D;
+			packageReferences = (
+				CDC544CF2A325BE1003CFEC0 /* XCRemoteSwiftPackageReference "Blackbird" */,
+			);
 			productRefGroup = CD09A4892A29188B00B0CF2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,6 +197,7 @@
 				CD09A48E2A29188B00B0CF2D /* DogBreedSelectorView.swift in Sources */,
 				CD600DED2A300F7800C32FD2 /* pictureText.swift in Sources */,
 				CD600DEB2A300C1100C32FD2 /* BubbleSelector.swift in Sources */,
+				CDC544D42A325C3F003CFEC0 /* helper.swift in Sources */,
 				CD09A48C2A29188B00B0CF2D /* DogBreedSelectorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDC544CF2A325BE1003CFEC0 /* XCRemoteSwiftPackageReference "Blackbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcoarment/Blackbird";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDC544D02A325BE1003CFEC0 /* Blackbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDC544CF2A325BE1003CFEC0 /* XCRemoteSwiftPackageReference "Blackbird" */;
+			productName = Blackbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD09A4802A29188B00B0CF2D /* Project object */;
 }

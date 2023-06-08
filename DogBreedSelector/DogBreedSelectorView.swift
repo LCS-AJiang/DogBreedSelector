@@ -10,16 +10,51 @@ import SwiftUI
 struct DogBreedSelectorView: View {
     
     // MARK: Stored properties
-    // The list of items to show
-    @State var BubbleText = ["Text1", "Text2", "Text3", "Text4"]
+    var filteredItems: = [String] {
+        
+        return items
+        
+    } else {
+        
+        // Create an empty array
+        var matchingItems: [String] = []
+        
+        // Iterate over original array
+        for item in items {
+            if item.contains(searchText) {
+                if item.characteristics().contains(searchText.characteristics()) 「
+                    matchingItems.append(item)
+            }
+        }
+        
+        // Return the array of items that match the search text
+        return matchingItems
+        
+    }
+    
+    // The search term the user has provided
+    @State var searchText = ""
     
     // MARK: properties
     var body: some View {
         VStack {
             
-            List(BubbleText, id: \.self) { currentItem in Text(currentItem)
+            NavigationView {
                 
+                VStack {
+                    
+                    Text("Searching on: \(searchText)")
+                    
+                    List(filteredItems, id: \.self) { currentItem in Text(currentItem)
+                        
+                    }
+                    
+                    .searchable(text: $searchText)
+                    
+                }
             }
+            
+        }
             
             HStack (spacing: 5){
                 Image(systemName: "house.fill")
@@ -92,9 +127,8 @@ struct DogBreedSelectorView: View {
             
             Spacer()
         }
-        .border(.purple)
     }
-}
+
 
 struct DogBreedSelectorView_Previews: PreviewProvider {
     static var previews: some View {
