@@ -18,6 +18,7 @@
 		CDC544D12A325BE1003CFEC0 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = CDC544D02A325BE1003CFEC0 /* Blackbird */; };
 		CDC544D42A325C3F003CFEC0 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC544D32A325C3F003CFEC0 /* helper.swift */; };
 		CDC544D62A325E25003CFEC0 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC544D52A325E25003CFEC0 /* Breed.swift */; };
+		CDC544D82A335AE6003CFEC0 /* DogbreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC544D72A335AE6003CFEC0 /* DogbreedListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CD600DEC2A300F7800C32FD2 /* pictureText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureText.swift; sourceTree = "<group>"; };
 		CDC544D32A325C3F003CFEC0 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
 		CDC544D52A325E25003CFEC0 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		CDC544D72A335AE6003CFEC0 /* DogbreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogbreedListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			children = (
 				CD09A48A2A29188B00B0CF2D /* DogBreedSelector */,
 				CDC544D22A325C0F003CFEC0 /* Helper */,
+				CDC544D72A335AE6003CFEC0 /* DogbreedListView.swift */,
 				CD09A4992A2E1CF600B0CF2D /* Model */,
 				CD09A4912A29188D00B0CF2D /* Preview Content */,
 				CD09A4892A29188B00B0CF2D /* Products */,
@@ -202,6 +205,7 @@
 				CD600DED2A300F7800C32FD2 /* pictureText.swift in Sources */,
 				CD600DEB2A300C1100C32FD2 /* BubbleSelector.swift in Sources */,
 				CDC544D42A325C3F003CFEC0 /* helper.swift in Sources */,
+				CDC544D82A335AE6003CFEC0 /* DogbreedListView.swift in Sources */,
 				CD09A48C2A29188B00B0CF2D /* DogBreedSelectorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

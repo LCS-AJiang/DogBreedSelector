@@ -13,6 +13,7 @@ struct Breed: BlackbirdModel {
     @BlackbirdColumn var id: Int
     @BlackbirdColumn var name: String
     @BlackbirdColumn var characteristics: String
+    @BlackbirdColumn var picture: String
     @BlackbirdColumn var size: String
     
 }

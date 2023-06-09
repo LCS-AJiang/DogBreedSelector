@@ -10,122 +10,137 @@ import SwiftUI
 struct DogBreedSelectorView: View {
     
     // MARK: Stored properties
-    var filteredItems: = [String] {
+//    var filteredItems: [String] {
+//
+//        if searchText.isEmpty {
+//
+//            return items
+//
+//        }; else {
+//
+//            // Create an empty array
+//            var matchingItems: [String] = []
+//
+//            // Iterate over original array
+//            for item in items {
+//                if item.contains(searchText) {
+//                    if item.characteristics().contains(searchText.characteristics()) 「
+//                        matchingItems.append(item)
+//                }
+//            }
+//
+//            // Return the array of items that match the search text
+//            return matchingItems
+//
+//        }
+//        }
         
-        return items
-        
-    } else {
-        
-        // Create an empty array
-        var matchingItems: [String] = []
-        
-        // Iterate over original array
-        for item in items {
-            if item.contains(searchText) {
-                if item.characteristics().contains(searchText.characteristics()) 「
-                    matchingItems.append(item)
-            }
-        }
-        
-        // Return the array of items that match the search text
-        return matchingItems
-        
-    }
     
     // The search term the user has provided
     @State var searchText = ""
     
     // MARK: properties
     var body: some View {
+        
         VStack {
-            
-            NavigationView {
+            VStack {
                 
-                VStack {
+                NavigationView {
                     
-                    Text("Searching on: \(searchText)")
+    //                VStack {
+    //
+    //                    Text("Searching on: \(searchText)")
+    //
+    //                    List(filteredItems, id: \.self) { currentItem in Text(currentItem)
+    //
+    //                    }
+    //
+    //                    .searchable(text: $searchText)
+    //
+    //                }
+                }
+                
+            }
+                
+                HStack (spacing: 5){
+                    Image(systemName: "house.fill")
+                        .resizable()
+                        .foregroundColor(.black)
+                        .frame(width: 40, height: 40)
                     
-                    List(filteredItems, id: \.self) { currentItem in Text(currentItem)
-                        
+                    
+                    ZStack {
+                        Rectangle()
+                            .stroke(Color.black)
+                            .frame(height: 50)
                     }
                     
-                    .searchable(text: $searchText)
+                }
+                Divider()
+                    .frame(height: 1)
+                    .overlay(Color.black)
+                    .edgesIgnoringSafeArea(.horizontal)
+                
+                //            .border(.red)
+                //.padding(.horizontal)
+                
+                VStack {
+                        HStack {
+                        bubbleText2(text: "Friendly")
+                        bubbleText2(text: "Sensitive")
+                        bubbleText2(text: "Playful")
+                        bubbleText2(text: "High Intelligent")
+                        
                     
                 }
-            }
-            
-        }
-            
-            HStack (spacing: 5){
-                Image(systemName: "house.fill")
-                    .resizable()
-                    .foregroundColor(.black)
-                    .frame(width: 40, height: 40)
-                
-                
-                ZStack {
-                    Rectangle()
-                        .stroke(Color.black)
-                        .frame(height: 50)
-                }
-                
-            }
-            Divider()
-                .frame(height: 1)
-                .overlay(Color.black)
-                .edgesIgnoringSafeArea(.horizontal)
-            
-            //            .border(.red)
-            //.padding(.horizontal)
-            
-            VStack {
                     HStack {
-                    bubbleText2(text: "Friendly")
-                    bubbleText2(text: "Sensitive")
-                    bubbleText2(text: "Playful")
-                    bubbleText2(text: "High Intelligent")
-                    
-                
-            }
-                HStack {
-                    bubbleText(text: "Outgoing")
-                                bubbleText(text: "Active")
-                                bubbleText(text: "Assistance")
-                                bubbleText(text: "Energetic")
-                    
+                        bubbleText(text: "Outgoing")
+                                    bubbleText(text: "Active")
+                                    bubbleText(text: "Assistance")
+                                    bubbleText(text: "Energetic")
+                        
+                    }
+                    HStack {
+                        bubbleText(text: "Loyal")
+                        bubbleText(text: "Affectionate")
+                    }
                 }
-                HStack {
-                    bubbleText(text: "Loyal")
-                    bubbleText(text: "Affectionate")
-                }
-            }
-            .lineLimit(2)
-            
-            VStack (spacing: 20){
-                Divider()
-                    .frame(height: 3)
-                    .overlay(Color.black)
+                .lineLimit(2)
                 
-                Text("HIGHLY RECOMMENDED")
-                    .font(.title)
-                    .bold()
-                
-                Divider()
-                    .frame(height: 3)
-                    .overlay(Color.black)
-                HStack {
-                    pictureText(pictureOfDogs: "LabradorRetriever", characteristics: ["friendly", "outgoing", "active", "assistance"])
+                VStack (spacing: 20){
+                    Divider()
+                        .frame(height: 3)
+                        .overlay(Color.black)
                     
-                    pictureText(pictureOfDogs: "LabradorRetriever", characteristics: ["friendly", "outgoing", "active", "assistance"])
+                    Text("HIGHLY RECOMMENDED")
+                        .font(.title)
+                        .bold()
                     
+                    Divider()
+                        .frame(height: 3)
+                        .overlay(Color.black)
+                    HStack {
+                        pictureText(
+                            name: "Labrador Retriever",
+                            pictureOfDogs: "LabradorRetriever",
+                            characteristics: "friendly, energetic, loyal, affectionate")
+                        
+                        pictureText(
+                            name: "Golden Retriever",
+                            pictureOfDogs: "GoldenRetriever",
+                            characteristics: "friendly, energetic, loyal, affectionate")
+                        
+                    }
+                    .font(.caption2)
                 }
-                .font(.caption2)
-            }
-            .border(.green)
-            .padding(.vertical)
-            .edgesIgnoringSafeArea(.horizontal)
-            
-            Spacer()
+                .border(.green)
+                .padding(.vertical)
+                .edgesIgnoringSafeArea(.horizontal)
+                
+                Spacer()
+        }
+        
+        
         }
     }
 
