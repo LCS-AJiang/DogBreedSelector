@@ -18,7 +18,7 @@ struct DogBreedSelectorView: View {
         VStack {
             
             HStack (spacing: 5){
-                Image(systemName: "house.fill")
+                Image(systemName: "pawprint")
                     .resizable()
                     .foregroundColor(.black)
                     .frame(width: 40, height: 40)
