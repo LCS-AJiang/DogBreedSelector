@@ -9,33 +9,6 @@ import SwiftUI
 
 struct DogBreedSelectorView: View {
     
-    // MARK: Stored properties
-//    var filteredItems: [String] {
-//
-//        if searchText.isEmpty {
-//
-//            return items
-//
-//        }; else {
-//
-//            // Create an empty array
-//            var matchingItems: [String] = []
-//
-//            // Iterate over original array
-//            for item in items {
-//                if item.contains(searchText) {
-//                    if item.characteristics().contains(searchText.characteristics()) 「
-//                        matchingItems.append(item)
-//                }
-//            }
-//
-//            // Return the array of items that match the search text
-//            return matchingItems
-//
-//        }
-//        }
-        
-    
     // The search term the user has provided
     @State var searchText = ""
     
@@ -43,68 +16,71 @@ struct DogBreedSelectorView: View {
     var body: some View {
         
         VStack {
-            VStack {
+            
+            HStack (spacing: 5){
+                Image(systemName: "house.fill")
+                    .resizable()
+                    .foregroundColor(.black)
+                    .frame(width: 40, height: 40)
                 
-                NavigationView {
-                    
-    //                VStack {
-    //
-    //                    Text("Searching on: \(searchText)")
-    //
-    //                    List(filteredItems, id: \.self) { currentItem in Text(currentItem)
-    //
-    //                    }
-    //
-    //                    .searchable(text: $searchText)
-    //
-    //                }
+                
+                ZStack {
+                    Rectangle()
+                        .stroke(Color.black)
+                        .frame(height: 50)
                 }
                 
             }
-                
-                HStack (spacing: 5){
-                    Image(systemName: "house.fill")
-                        .resizable()
-                        .foregroundColor(.black)
-                        .frame(width: 40, height: 40)
+            Divider()
+                .frame(height: 1)
+                .overlay(Color.black)
+                .edgesIgnoringSafeArea(.horizontal)
+            
+            
+            VStack {
+                HStack {
+                    bubbleText2(text: "Friendly")
+                    bubbleText2(text: "Sensitive")
+                    bubbleText2(text: "Playful")
+                    bubbleText2(text: "Intelligent")
                     
-                    
-                    ZStack {
-                        Rectangle()
-                            .stroke(Color.black)
-                            .frame(height: 50)
-                    }
                     
                 }
-                Divider()
-                    .frame(height: 1)
-                    .overlay(Color.black)
-                    .edgesIgnoringSafeArea(.horizontal)
-                
-                //            .border(.red)
-                //.padding(.horizontal)
-                
-                VStack {
-                        HStack {
-                        bubbleText2(text: "Friendly")
-                        bubbleText2(text: "Sensitive")
-                        bubbleText2(text: "Playful")
-                        bubbleText2(text: "High Intelligent")
-                        
+                HStack {
+                    bubbleText(text: "Outgoing")
+                    bubbleText(text: "Active")
+                    bubbleText(text: "Assistance")
+                    bubbleText(text: "Energetic")
                     
                 }
-                    HStack {
-                        bubbleText(text: "Outgoing")
-                                    bubbleText(text: "Active")
-                                    bubbleText(text: "Assistance")
-                                    bubbleText(text: "Energetic")
-                        
-                    }
-                    HStack {
-                        bubbleText(text: "Loyal")
-                        bubbleText(text: "Affectionate")
-                    }
+                
+                HStack {
+                    bubbleText(text: "Loyal")
+                    bubbleText(text: "Affectionate")
+                    bubbleText(text: "Mischievous")
+                    bubbleText(text: "Alert")
                 }
+                
+                HStack {
+                    bubbleText(text: "Smart")
+                    bubbleText(text: "Vigilant")
+                    bubbleText(text: "Adaptable")
+                    bubbleText(text: "Courageous")
+                }
+                
+                HStack {
+                    bubbleText(text: "Confident")
+                    bubbleText(text: "Devoted")
+                    bubbleText(text: "Versatile")
+                    bubbleText(text: "Gentle")
+                }
+                
+                HStack {
+                    bubbleText(text: "Graceful")
+                    bubbleText(text: "Calm")
+                    bubbleText(text: "Barkless")
+                }
+                
                 .lineLimit(2)
                 
                 VStack (spacing: 20){
@@ -123,30 +99,31 @@ struct DogBreedSelectorView: View {
                         pictureText(
                             name: "Labrador Retriever",
                             pictureOfDogs: "LabradorRetriever",
-                            characteristics: "friendly, energetic, loyal, affectionate")
+                            characteristics: "friendly, outgoing, active, assistance")
                         
                         pictureText(
                             name: "Golden Retriever",
                             pictureOfDogs: "GoldenRetriever",
-                            characteristics: "friendly, energetic, loyal, affectionate")
+                            characteristics: "devoted, intelligent, affectionate, friendly")
+                        
                         
                     }
                     .font(.caption2)
                 }
-                .border(.green)
                 .padding(.vertical)
                 .edgesIgnoringSafeArea(.horizontal)
                 
                 Spacer()
-        }
-        
-        
+            }
+            
+            
         }
     }
-
-
-struct DogBreedSelectorView_Previews: PreviewProvider {
-    static var previews: some View {
-        DogBreedSelectorView()
+    
+    
+    struct DogBreedSelectorView_Previews: PreviewProvider {
+        static var previews: some View {
+            DogBreedSelectorView()
+        }
     }
 }
