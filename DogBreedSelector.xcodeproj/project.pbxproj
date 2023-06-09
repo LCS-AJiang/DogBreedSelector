@@ -17,6 +17,7 @@
 		CD600DED2A300F7800C32FD2 /* pictureText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD600DEC2A300F7800C32FD2 /* pictureText.swift */; };
 		CDC544D12A325BE1003CFEC0 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = CDC544D02A325BE1003CFEC0 /* Blackbird */; };
 		CDC544D42A325C3F003CFEC0 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC544D32A325C3F003CFEC0 /* helper.swift */; };
+		CDC544D62A325E25003CFEC0 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC544D52A325E25003CFEC0 /* Breed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CD600DEA2A300C1100C32FD2 /* BubbleSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSelector.swift; sourceTree = "<group>"; };
 		CD600DEC2A300F7800C32FD2 /* pictureText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureText.swift; sourceTree = "<group>"; };
 		CDC544D32A325C3F003CFEC0 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		CDC544D52A325E25003CFEC0 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				CD09A48F2A29188D00B0CF2D /* Assets.xcassets */,
+				CDC544D52A325E25003CFEC0 /* Breed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC544D62A325E25003CFEC0 /* Breed.swift in Sources */,
 				CD09A48E2A29188B00B0CF2D /* DogBreedSelectorView.swift in Sources */,
 				CD600DED2A300F7800C32FD2 /* pictureText.swift in Sources */,
 				CD600DEB2A300C1100C32FD2 /* BubbleSelector.swift in Sources */,
