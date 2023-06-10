@@ -114,7 +114,7 @@ VALUES
 (
     "French Bulldog",
     "playful, smart, adaptable, friendly",
-    "French Bulldog",
+    "FrenchBulldog",
     "small"
 );
 
@@ -165,7 +165,7 @@ VALUES
 (
     "Pembroke Welsh Corgi",
     "alert, smart, affectionate, vigilant",
-    "PembrokWelshCorgi",
+    "PembrokeWelshCorgi",
     "medium"
 );
 
